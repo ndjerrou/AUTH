@@ -12,7 +12,7 @@ const {
 
 const router = express.Router();
 
-router.get("/signup", (req, res) => {
+router.get("/", (req, res) => {
   res.send(signupTemplate({ req }));
 });
 
@@ -59,13 +59,6 @@ router.post("/signin", async (req, res) => {
   req.session.userId = user.id;
 
   res.send("Okay, connected");
-});
-
-router.get("/signup", (req, res) => {
-  res.send(
-    `
-        `
-  );
 });
 
 router.post("/signup", async (req, res) => {

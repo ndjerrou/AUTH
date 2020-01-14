@@ -15,6 +15,6 @@ app.use(
 );
 app.use(authRouter);
 
-app.listen(process.env.port || 3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Listenning in port 3000");
 });
